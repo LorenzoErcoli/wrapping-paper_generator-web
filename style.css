@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700;900&display=swap');
+
+	{
+	--border-bottom-left-radiusQZRyellow: #FEDA36;
+};
+
+h1{}
+
+h5{ font-family: 'Titillium Web', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+	margin: 0;
+	padding: 0;
+	color: white;}
+
+option{font-family: 'Titillium Web', sans-serif;
+    font-weight: 900
+
+}
+
+body{
+	font-family: 'Titillium Web', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: var(--QZRyellow)
+}
+
+#defaultCanvas0{
+	transform: translate(-50%, -50%);
+	margin-left: 50vw;
+	margin-top: 50vh;
+}
+
+#container_pannelcontrol{
+	position:  fixed;
+	background-color: black;
+	z-index: 1;
+	padding: 20px;
+	border-radius: 0 0 20px 0px;
+
+
+}
