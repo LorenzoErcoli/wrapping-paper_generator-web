@@ -116,7 +116,7 @@ function chessboard(number_squares, width_canvas, height_canvas, colors, design_
 				break;
 
 				case 6:
-					if( (x)%frequency_color_hor == 0 || (y*x)%frequency_color_ver == 0){
+					if(x%frequency_color_hor == 0 || (x+y)%frequency_color_ver == 0){
 						graphic_paper.stroke(colors[index_colors_palette+1])
 						graphic_paper.fill(colors[index_colors_palette+1])
 						type_shape("rect",w_side_squares*x, h_side_squares*y, w_side_squares, w_side_squares)
