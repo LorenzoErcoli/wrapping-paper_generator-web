@@ -36,8 +36,44 @@ function paper_select(){
 	}
 
 
-	index_colors_palette = (int(random(1)*3))*2
-	console.log(index_colors_palette)
+	type_color = document.getElementById("type_color").value;
+
+	switch (type_color){
+		case "0":
+			index_colors_palette = 0
+		break;
+
+		case "1":
+			index_colors_palette = 2
+		break;
+
+		case "2":
+			index_colors_palette = 4
+		break;
+
+		case "3":
+			index_colors_palette = 6
+		break;
+
+		case "4":
+			index_colors_palette = 8
+		break;
+	}
+
+	dominant = document.getElementById("dominant").value;
+
+	switch (dominant){
+		case "scuro":
+			index_colors_palette_00 = index_colors_palette
+			index_colors_palette_01 = index_colors_palette+1
+		break;
+
+		case "chiaro":
+			index_colors_palette_00 = index_colors_palette+1
+			index_colors_palette_01 = index_colors_palette
+		break;
+	}
+
 	draw()
 
 

@@ -21,6 +21,19 @@
 		    			<option value="custom">custom</option>
 		</select><br>
 
+		<select name="type_colo" id="type_color" onchange="paper_select()">
+		    			<option value="0">rosa/blu</option>
+		    			<option value="1">rosso/verde</option>
+		    			<option value="2">bianco/arancio</option>
+		    			<option value="3">viola/azzurro</option>
+		    			<option value="4">nero/verdeacqua</option>
+		</select><br>
+
+		<select name="dominant" id="dominant" onchange="paper_select()">
+		    			<option value="scuro">scuro</option>
+		    			<option value="chiaro">chiaro</option>
+		</select><br>
+
 	<form>
 		  <label for="numb_sqr"><h5>Grandezza</h5></label><br>
 		  <input type="range" id="numb_sqr" name="numb_sqr" min="1" max="10" onchange="numb_square_select()">
